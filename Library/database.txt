@@ -16,12 +16,12 @@ Harry Potter i Zakon Feniksa	Rowling, J. K.	978-83-8008-287-8
 Harry Potter i Ksi¹¿e Pó³krwi	Rowling, J. K.	978-83-8008-287-8
 Harry Potter i Insygnia Œmierci	Rowling, J. K.	978-83-8008-287-8
 Harry Potter i Kamieñ Filozoficzny	Rowling, J. K.	978-83-7278-924-2
-Harry Potter i Komnata tajemnic	Rowling, J. K.	978-83-7278-924-3
-Harry Potter i Wiêzieñ Azkabanu	Rowling, J. K.	978-83-7278-924-4
-Harry Potter i Czara Ognia	Rowling, J. K.	978-83-7278-924-5
-Harry Potter i Zakon Feniksa	Rowling, J. K.	978-83-7278-924-6
-Harry Potter i Ksi¹¿e Pó³krwi	Rowling, J. K.	978-83-7278-924-7
-Harry Potter i Insygnia Œmierci	Rowling, J. K.	978-83-7278-924-8
+Harry Potter i Komnata tajemnic	Rowling, J. K.	978-83-7278-924-2
+Harry Potter i Wiêzieñ Azkabanu	Rowling, J. K.	978-83-7278-924-2
+Harry Potter i Czara Ognia	Rowling, J. K.	978-83-7278-924-2
+Harry Potter i Zakon Feniksa	Rowling, J. K.	978-83-7278-924-2
+Harry Potter i Ksi¹¿e Pó³krwi	Rowling, J. K.	978-83-7278-924-2
+Harry Potter i Insygnia Œmierci	Rowling, J. K.	978-83-7278-924-2
 Zabiæ drozda	Lee, Harper	978-83-61174-88-2
 Zabiæ drozda	Lee, Harper	978-83-7686-861-5
 Wichrowe Wzgórza	Bronte, Emily	978-83-7779-174-5
@@ -49,7 +49,6 @@ Buszuj¹cy w zbo¿u	Salinger, J. D. 	978-83-7359-555-2
 Buszuj¹cy w zbo¿u	Salinger, J. D. 	978-83-7659-699-0
 Buszuj¹cy w zbo¿u	Salinger, J. D. 	978-83-7885-811-9
 ¯ona podró¿nika w czasie	Niffenegger, Audrey	978-83-7534-072-3
-¯ona podró¿nika w czasie	Niffenegger, Audrey	978-83-247-0201-2
 Przeminê³o z wiatrem	Mitchell, Margaret	978-83-7985-662-6
 Przeminê³o z wiatrem	Mitchell, Margaret	978-83-7659-119-3
 Wielki Gatsby	Fitzgerald, F. Scott	978-83-111-2471-4
@@ -124,7 +123,7 @@ Opowieœæ podrêcznej	Atwood, Margaret	978-83-8032-439-8
 Opowieœæ podrêcznej	Atwood, Margaret	978-83-8146-204-4
 W³adca much	Golding, William	978-83-60717-79-0
 W³adca much	Golding, William	978-83-8202-047-2
-W³adca much	Golding, William	978-83-08-049-18-1
+W³adca much	Golding, William	978-83-08-04918-1
 Pokuta	McEwan, Ian	978-83-8125-323-9
 Pokuta	McEwan, Ian	978-83-8125-342-0
 ¯ycie Pi	Martel, Yann	978-83-240-1054-7
@@ -182,7 +181,7 @@ Jaskó³ki i Amazonki	Ransome, Arthur	978-83-7785-833-2
 Germinal	Zola, Emil	978-83-7435-805-7
 Germinal	Zola, Emil	978-83-7435-141-6
 Targowisko pró¿noœci	Thackeray, William Makepeace	978-83-252-0426-6
-Opêtanie	Byatt, A. S.	978-83-7648-763-1
+Opêtanie	Byatt, A. S.	978-83-7648-463-1
 Opowieœæ wigilijna	Dickens, Charles	978-83-65634-29-0
 Opowieœæ wigilijna	Dickens, Charles	978-83-66251-13-7
 Opowieœæ wigilijna	Dickens, Charles	978-83-7162-971-6

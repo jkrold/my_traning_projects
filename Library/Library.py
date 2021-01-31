@@ -1,54 +1,10 @@
 from datetime import date
 from typing import List
 
-
-def validate_isbn(isbn: str) -> str:
-    # only numbers?
-    clean_isbn = isbn.replace("-", "")
-    int(clean_isbn)
-    # # check numbers of dashes and their spot
-    # splited_isbn = isbn.split("-")
-    # # if len(splited_isbn) != 5:
-    # #     raise ValueError(f"Format of ISBN:{isbn} is incorrect")
-    # # # correct EAN prefix?
-    # # if not int(splited_isbn[0]) in (978, 979):
-    # #     raise ValueError(f"Prefix of ISBN:{splited_isbn[0]} is incorrect")
-    # check digit
-    isbn_digit = int(isbn[-1])
-    isbn_to_check = 0
-    for i in range(0, 12, 2):
-        isbn_to_check += int(clean_isbn[i]) + int(clean_isbn[i + 1]) * 3
-    if (isbn_digit == isbn_to_check % 10) or (isbn_digit == 10 - (isbn_to_check % 10)):
-        pass
-    else:
-        raise ValueError(f"Check digit of ISBN:{isbn[-1]} is incorrect")
-    print("ISBN is correct")
-    return isbn
+from my_traning_projects.Library.book import Book
 
 
-class Book:
-    def __init__(self, title: str, author: str, isbn: str):
-        self._title = title
-        self._author = author
-        self._isbn = validate_isbn(isbn)
-
-    @property
-    def title(self):
-        return self._title
-
-    @property
-    def author(self):
-        return self._author
-
-    @property
-    def isbn(self):
-        return self._isbn
-
-    def __repr__(self):
-        return f'{self._author}, "{self._title}"'
-
-
-class Library:
+class BookLibrary:
     def __init__(self):
         self._books_collection = []
 
@@ -98,16 +54,5 @@ class Library:
             raise ValueError("Library is empty!")
         for library_book in self._books_collection:
             if library_book['book'] == book_to_borrow:
-                library_book['status'] = "lended"
+                library_book['status'] = "lent"
                 library_book['dates_of_lends'].append(date.today().strftime("%d/%m/%Y"))
-
-
-book = Book("LOTR", "J.R.R Tolkien", "978-83-900210-1-0")
-book2 = Book("LOTR 2", "J.R.R Tolkien", "978-83-7181-510-2")
-
-my_library = Library()
-my_library.add_book(book)
-my_library.add_book(book2)
-my_library.borrow_book(book)
-
-print(my_library.books_collection)
