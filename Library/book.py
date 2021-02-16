@@ -1,3 +1,5 @@
+from datetime import date, timedelta
+
 def validate_isbn(isbn: str) -> str:
     # only numbers?
     clean_isbn = isbn.replace("-", "")
@@ -41,3 +43,42 @@ class Book:
 
     def __repr__(self):
         return f'{self._author}, "{self._title}"'
+
+class Book_item(Book):
+    def __init__(self, title: str, author: str, isbn: str):
+        super().__init__(title, author, isbn)
+        self._available = True
+        self._dates_of_lend_and_return = []
+
+    def lend_book(self, lend_date: date = date.today(), rental_time: int = 14) -> str:
+        if self._available:
+            self._dates_of_lend_and_return.append((lend_date, lend_date + timedelta(rental_time)))
+            self._available = False
+            return "Book correctly lent"
+        else:
+            raise AssertionError("Book is lend!")
+
+    def book_return(self) -> str:
+        if self._available:
+            raise AssertionError("Book isn't lend!")
+        else:
+            self._dates_of_lend_and_return[-1] = self._dates_of_lend_and_return[-1][0]
+            return "Book correctly return"
+
+    def check_rental_day(self) -> None:
+        if self._available:
+            return
+        else:
+            if date.today() <= self._dates_of_lend_and_return[-1][1]:
+                return
+            else:
+                raise ValueError("The return date is exceeded!")
+
+    @property
+    def available(self):
+        return self._available
+
+    @property
+    def dates_of_lend_and_return(self):
+        return self._dates_of_lend_and_return
+
